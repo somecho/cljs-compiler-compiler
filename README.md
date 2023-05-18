@@ -17,8 +17,10 @@ git clone https://github.com/somecho/cljs-compiler-compiler
 cd cljs-compiler-compiler
 lein cljsbuild once
 ```
-There will now be a `cljs.js` file in `/out`. You can then add this as a script
-to your html document.
+There will now be a `cljs.js` file in `/js`. You can then add this as a script
+to your html document. 
+
+Alternatively, a [prebuilt JS script](./js/cljs.js) is already packaged in this repo. 
 
 ```js
 cljs.compile("(+ 1 1)")
