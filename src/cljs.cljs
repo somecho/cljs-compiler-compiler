@@ -7,6 +7,7 @@
      (c/empty-state)
      source-string
      ""
-     (fn [x] (reset! result (:value x))))
+     (fn [x] (reset! result  (if (:error x)
+                               (:error x)
+                               (:value x)))))
     @result))
-

@@ -5,7 +5,8 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [org.clojure/clojurescript "1.11.60"]]
-  :plugins [[lein-cljsbuild "1.1.8"]]
+  :plugins [[lein-cljsbuild "1.1.8"]
+            [cider/cider-nrepl "0.24.0"]]
   :cljsbuild {:builds [{:source-paths ["src"]
                         :compiler {:output-to "js/cljs.js"
                                    :optimizations :whitespace
